@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class WithoutSaveGuard implements CanDeactivate<unknown> {
+export class WithoutSaveGuard  {
   canDeactivate(
     component: unknown,
     currentRoute: ActivatedRouteSnapshot,
